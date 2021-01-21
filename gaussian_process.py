@@ -11,6 +11,9 @@ The maximum value that the RBF kernel can be is 1 and occurs when d₁₂ is 0 w
 1. When the points are the same, there is no distance between them and therefore they are extremely similar
 2. When the points are separated by a large distance, 
    then the kernel value is less than 1 and close to 0 which would mean that the points are dissimilar.
+
+For choosing more advanced kernels:
+https://www.cs.toronto.edu/~duvenaud/cookbook/
 '''
 def rbf_kernel(x_1, x_2, l=1.0, sigma_f=1.0):
     # (x_1 - X_2)^2 = x_1^2 - 2*x_1*x_2 + x_2^2
